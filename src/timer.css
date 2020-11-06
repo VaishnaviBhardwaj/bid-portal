@@ -1,43 +1,83 @@
-.timer div:only-child{
-    border: 2px solid black;
-    border-radius: 3px;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    margin-top: 3em;
-    padding: 1em;
-    text-align: center;
+.timer div:only-child {
+  border: 2px solid black;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 3em;
+  padding: 1em;
+  text-align: center;
 }
-.timer h1:only-child{
-    color: black;
-}
-
-
-section p,.timer div:only-child span{
-    font-size:1em;
-    color: black;
+.timer h1:only-child {
+  color: black;
 }
 
-@media screen and (max-width:480px){
-    .timer div:only-child{
-        margin-left: 2em;
-        margin-right: 2em;
-        padding: 3em 1em;
-       
-    }
+section p,
+.timer div:only-child span {
+  font-size: 1em;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .timer div:only-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
 }
 
 .field {
-    width: 300px;
-    height: 66px;
-    border-radius: 6px;
-    border-color:#8EC5FC ;
-    position: relative;
-    background-color:white;
-    transition: 0.3s all;
-    margin-top: 20px;
-  }
+  width: 300px;
+  height: 66px;
+  border-radius: 6px;
+  border-color: #8ec5fc;
+  position: relative;
+  background-color: white;
+  transition: 0.3s all;
+  margin-top: 20px;
+}
 
-  .field:hover {
-    background-color:white;
-    box-shadow: 0px 4px 20px 0px #8EC5FC;
+.field:hover {
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px #8ec5fc;
+}
+
+.flex-container {
+  width: 770px;
+  min-height: 300px;
+  /* margin: 0 auto; */
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard syntax */
+}
+.flex-container .column {
+  padding: 10px;
+  background: #dbdfe5;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  margin: 10px;
+  flex: 1; /* Standard syntax */
+}
+.flex-container .column.bg-alt {
+  background: #b4bac0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flex-container {
+   
+    width: 100%;
   }
+}
+
+@media only screen and (max-width: 1400px) {
+    .flex-container {
+     
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    .timer {
+     
+      width: 100%;
+    }
+  }
+  

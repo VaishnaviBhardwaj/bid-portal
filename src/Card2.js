@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ima from "./assets/images/download.jpg";
-import {Card,Content ,FeatureListItem,PlanTitle,Plantimer} from "./Card.Css";
+import {Card,Content ,Image,FeatureListItem,PlanTitle,Plantimer} from "./Card.Css";
 function Card2 (){
     const[feature]=useState([
         "Farmer Name: Shobhit ",
@@ -18,7 +18,9 @@ return(
                 Rice
             </PlanTitle>
             <Plantimer>
+                <Image>
                 <img src ={ima}/>
+                </Image>
             </Plantimer>
             {
                 feature.map(item=>(
