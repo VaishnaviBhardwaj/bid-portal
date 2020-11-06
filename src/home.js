@@ -4,7 +4,7 @@ import Cards from"./Cards";
 import Card2 from "./Card2";
 import { ActionButton,textbtn } from './Card.Css';
 import "./timer.css";
-import Marquee from 'react-double-marquee';
+
 
 
 
@@ -30,9 +30,11 @@ import Marquee from 'react-double-marquee';
        <input
        className="field"
           type="text" 
-          placeholder="                   Enter the Bid"
+          placeholder="                       Enter the Bid"
         />
-        <ActionButton><h3>Bid</h3></ActionButton>
+        <ActionButton><h3>
+          Bid
+          </h3></ActionButton>
       
     </center>
    </div>

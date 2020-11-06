@@ -33,17 +33,19 @@ export const Card =styled.div`
             height:200%auto;
             opacity: 0.0;
             ${gradient(-50)};
-            /* transition:opacity 0.75s; */
+            transition:opacity 0.75s; 
             transition:opacity 0.s ease;
 
     }
     &:hover::after{opacity:1.0}   
-    @media  (max-width: 700px) {
+    @media Screen  and (max-width: 500px) {
             width:100%;
     }
           
 
     `;
+
+
 
 export const Content =styled.div`
         position:relative;
@@ -53,7 +55,7 @@ export const Content =styled.div`
         align-items:center;
         justify-content:center;
         
-        @media (max-width: 500px) {
+        @media Screen  and (max-width: 500px) {
             font-size: 1rem;
         }`
 
@@ -62,13 +64,13 @@ export const PlanTitle = styled.div`
         font-size:2.25rem;
         color:black;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        @media (max-width: 500px) {
+        @media Screen  and (max-width: 500px) {
             font-size: 1rem;
         }`
 
 export const Plantimer = styled.div`
         font-size: 1rem;
-        @media (max-width: 500px) {
+        @media Screen  and  (max-width: 500px) {
             font-size: 0.8rem;
         }
 `
@@ -81,7 +83,7 @@ export const FeatureListItem =styled.div`
         font-size:1.5rem;
         color:black;
         font-family:Times New Roman;
-        @media (max-width: 500px) {
+        @media Screen  and (max-width: 500px) {
             font-size: 0.8rem;
         }
 `;
@@ -99,21 +101,20 @@ export const ActionButton=styled.div`
         transition: background 0.25rem;
         margin-top:10px;
         
+        
 
 
         &:hover{ background :#FF6A88;}
-        @media (max-width: 500px) {
+        @media Screen  and (max-width: 500px) {
             width:100%;
         }
 
 `;
 export const Image = styled.div`
       
-        @media (max-width: 500px) {
+        @media Screen  and (max-width: 700px) {
             width:100%;
         }`
-
-
 
 
 export const ActionButton1=styled.div`
@@ -132,6 +133,14 @@ export const ActionButton1=styled.div`
 
 
         &:hover{ background :rgb(187, 58, 247);}
-`;
+        @media Screen  and  (max-width: 500px) {
+            width:100%;
+        }`
 
+;
 
+export const Body=styled.div`
+
+@media  Screen  and (max-width: 500px) {
+        width:100%;
+    }`

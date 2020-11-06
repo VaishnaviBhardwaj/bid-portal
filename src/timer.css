@@ -60,21 +60,24 @@ section p,
   background: #b4bac0;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 500px) {
   .flex-container {
-   
+    display: block;
+    margin-bottom: 20px;
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 500px) {
     .flex-container {
      
       width: 100%;
+       display: block;
+    margin-bottom: 20px;
     }
-  }
+  } */
   
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 500px) {
     .timer {
      
       width: 100%;
