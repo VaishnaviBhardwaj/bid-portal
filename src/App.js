@@ -1,17 +1,19 @@
-import  Cards from "./Cards";
-
 import Home from "./home";
+import React from 'react';
 
-
-function App() {
+class App extends React.Component {
  
-  return (
-    <diV>
-    <Home/>
-   </diV>
+
+  render(){
+    return (
+      <diV>
+      <Home/>
+     </diV>
+    
+    
+    );
+  } 
+  }
   
-  
-  );
-}
 
 export default App;

@@ -11,14 +11,14 @@ import { ActionButton,textbtn } from './Card.Css';
     
      return(
         <diV>
-  <div className="row"> 
-   <div className="column">
-     <Cards/> 
-   </div>
-   <div className="column">
-     <Card2/>
-   </div>
-   </div>
+          <div className="row"> 
+            <div className="column">
+              <Cards/> 
+            </div>
+            <div className="column">
+              <Card2/>
+            </div>
+          </div>
 
 
    <div className="Content">

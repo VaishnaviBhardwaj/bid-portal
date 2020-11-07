@@ -4,6 +4,7 @@ import Timer from"./Timer";
 
 function Cards (){
     
+    
     const[feature]=useState([
         
         " Current bid : ₹ 10,000",
