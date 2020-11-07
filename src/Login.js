@@ -19,17 +19,32 @@ class Login extends Component {
   }
 
   login(e) {
-    e.preventDefault();
-    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).catch((error) => {
+    e.preventDefault(); // change
+    const db = Fire.firestore();
+    db.settings({
+      timestampsInSnapshots: true
+    });
+    const userRef = db.collection("bid-register").add({
+        
+        email: this.state.email,
+        password: this.state.password,
+      })
+    .catch((error) => {
         console.log(error);
       });
   }
 
   signup(e){
     e.preventDefault();
-    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).then((u)=>{console.log(u)})
+    const db = Fire.firestore();
+    db.settings({
+      timestampsInSnapshots: true
+    });
+    const userRef = db.collection("bid-login").add({
+        
+        email: this.state.email,
+        password: this.state.password,
+      })
     .catch((error) => {
         console.log(error);
       })
