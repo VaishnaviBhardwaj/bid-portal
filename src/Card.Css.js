@@ -14,8 +14,8 @@ const gradient= degs => css`
 export const Card =styled.div`
     position:relative;
     overflow:hidden;
-    width:775px;
-    height:550px;
+    width:700px;
+    height:500px;
     padding:3rem 0 2rem;
     border-radius:0.2rem;
     color:white;
@@ -33,13 +33,19 @@ export const Card =styled.div`
             height:200%auto;
             opacity: 0.0;
             ${gradient(-50)};
-            /* transition:opacity 0.75s; */
+            transition:opacity 0.75s; 
             transition:opacity 0.s ease;
 
     }
-    &:hover::after{opacity:1.0}            
+    &:hover::after{opacity:1.0}   
+    @media Screen  and (max-width: 800px) {
+            width:100%;
+    }
+          
 
     `;
+
+
 
 export const Content =styled.div`
         position:relative;
@@ -48,20 +54,26 @@ export const Content =styled.div`
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        `;
-
+        
+        @media Screen  and (max-width: 500px) {
+            font-size: 1rem;
+        }`
 
 
 export const PlanTitle = styled.div`
         font-size:2.25rem;
         color:black;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        `;
+        @media Screen  and (max-width: 500px) {
+            font-size: 1rem;
+        }`
 
 export const Plantimer = styled.div`
         font-size: 1rem;
-        
-`; 
+        @media Screen  and  (max-width: 500px) {
+            font-size: 0.8rem;
+        }
+`
 
 export const FeatureListItem =styled.div`
         display:flex;
@@ -71,44 +83,64 @@ export const FeatureListItem =styled.div`
         font-size:1.5rem;
         color:black;
         font-family:Times New Roman;
+        @media Screen  and (max-width: 500px) {
+            font-size: 0.8rem;
+        }
 `;
 
-export const ActionButton=styled.div`
-        /* flex: 01 auto; */
-        height:40px;
-        width:150px;
-        padding:0 2rem;
-        border:1;
-        border-radius: 5%;
+export const Button=styled.div` 
+        height:50%;
+        width:120px;
+        padding: 5px 2px;
+        border:5px;
+        border-radius: 5px;
         color:black;
         background:#8EC5FC;
-        box-shadow: 0 11px 15px -7px rgba(0,0,0,0.25);
+        box-shadow: 0 11px 15px -7px green;
         transition: background 0.25rem;
         margin-top:10px;
+       
+        
         
 
 
         &:hover{ background :#FF6A88;}
+        @media Screen  and (max-width: 500px) {
+            width:100%;
+        }
+
 `;
+export const Image = styled.div`
+      
+        @media Screen  and (max-width: 700px) {
+            width:100%;
+        }`
 
 
-
-export const ActionButton1=styled.div`
-        /* flex: 01 auto; */
-        height:40px;
-        width:200px;
-        padding:0 2rem;
-        border:1;
-        border-radius: 40%;
-        color:black;
-        background:#8EC5FC;
-        box-shadow: 0 11px 15px -7px rgba(0,0,0,0.25);
-        transition: background 0.25rem;
-        margin-top:10px;
-        text-align:center;
-
-
-        &:hover{ background :rgb(187, 58, 247);}
-`;
+// export const ActionButton1=styled.div`
+//         /* flex: 01 auto; */
+//         height:40px;
+//         width:200px;
+//         padding:0 2rem;
+//         border:1;
+//         border-radius: 40%;
+//         color:black;
+//         background:#8EC5FC;
+//         box-shadow: 0 11px 15px -7px rgba(0,0,0,0.25);
+//         transition: background 0.25rem;
+//         margin-top:10px;
+//         text-align:center;
 
 
+//         &:hover{ background :rgb(187, 58, 247);}
+//         @media Screen  and  (max-width: 700px) {
+//             width:100%;
+//         }`
+
+// ;
+
+export const Body=styled.div`
+
+@media  Screen  and (max-width: 500px) {
+        width:100%;
+    }`

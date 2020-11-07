@@ -12,14 +12,6 @@ const ethers = require("ethers")
 
 class Card2 extends Component{
 
-//    const[feature]=useState([
-//         "Farmer Name: Shobhit ",
-//         "Quantity:200 kg",
-//         "Variety of Crop : Basmati Rice",
-//         "Price of product Per kg :  ₹ 500  ",
-        
-//     ]);
-
     state ={
         details: [
             {

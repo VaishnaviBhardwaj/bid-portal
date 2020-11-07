@@ -1,70 +1,27 @@
-/* .App {
-  text-align: center;
+
+
+
+/* .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  left: 0;
+  background-color: #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right {
+  right: 0;
+  background-color: red;
 } */
-.column {
-  -ms-flex: 1; 
-  flex:1;
-  /* width: 50%; */
-  padding: 10px;
-  height: 300px; 
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* .button1 {
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button5 {border-radius: 50%;} */
 
 button{
   min-height: 40px;
@@ -89,5 +46,23 @@ button:hover{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+
+.Content{
+  position:center;
+        z-index:3;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+}
+
+@media screen and (max-width: 600px) {
+  .Content {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
