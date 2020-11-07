@@ -1,8 +1,8 @@
-import React,{useState} from 'react';
+import React,{Component} from 'react';
 import "./timer.css";
 import Cards from"./Cards";
 import Card2 from "./Card2";
-import { ActionButton,textbtn } from './Card.Css';
+import { Button} from './Card.Css';
 import "./timer.css";
 
 
@@ -10,10 +10,14 @@ import "./timer.css";
 
 
  function Home(){
+
+
     
      return(
         <diV className="body">
-   
+           <Button>Logout</Button>
+          
+          
    <div class="flex-container">
      <div class="column">
        <Cards/>
@@ -32,9 +36,7 @@ import "./timer.css";
           type="text" 
           placeholder="                       Enter the Bid"
         />
-        <ActionButton><h3>
-          Bid
-          </h3></ActionButton>
+        <Button><h3>Bid</h3></Button>
       
     </center>
    </div>

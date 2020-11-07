@@ -1,13 +1,15 @@
-import  Cards from "./Cards";
-
 import Home from "./home";
+import  Login from"./loginRegister";
 
 
 function App() {
+
  
   return (
     <diV>
-    <Home/>
+     
+     {/* <Home/>  */}
+    <Login/>
    </diV>
   
   

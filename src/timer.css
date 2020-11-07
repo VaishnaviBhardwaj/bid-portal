@@ -60,7 +60,7 @@ section p,
   background: #b4bac0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .flex-container {
     display: block;
     margin-bottom: 20px;
@@ -83,4 +83,9 @@ section p,
       width: 100%;
     }
   }
-  
+  @media only screen and (max-width: 500px) {
+    .field{
+     
+      width: 100%;
+    }
+  }
